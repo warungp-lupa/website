@@ -12,6 +12,8 @@ popup.querySelector(".close").addEventListener("click", function () {
   popup.style.display = "none";
 });
 
+var span = document.getElementsByClassName("close")[0];
+
 // Jika pengguna mengklik di luar popup, sembunyikan juga
 window.addEventListener("click", function (event) {
   if (event.target == popup) {
@@ -19,12 +21,16 @@ window.addEventListener("click", function (event) {
   }
 });
 
+$("#masukBtn").on("click", function () {
+  popup.style.display = "block";
+});
+
 fetch("products.json")
   .then(function (response) {
     return response.json();
   })
 
-  .then(function (product) {
+  .then(function (products) {
     let placeholder = document.querySelectorAll("#listProduct");
     let out = "";
     for (let product of products) {
