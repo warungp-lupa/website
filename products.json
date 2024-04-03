@@ -23,30 +23,35 @@
   {
     "id": 4,
     "name": " Pecel Lele",
+    "desc": "Pecel khas Surabaya dengan bumbu kacang yang enak mantap lezat",
     "price": 11000,
     "image": "image/pecel_lele.png"
   },
   {
     "id": 5,
     "name": " Tahu",
+    "desc": "Tahu digoreng dengan minyak panas gratis bumbu madura jadi enak mantap lezat",
     "price": 4000,
     "image": "image/tahu.png"
   },
   {
     "id": 6,
     "name": " Tempe",
+    "desc": "Tempe digoreng dengan minyak panas gratis bumbu madura jadi enak mantap lezat",
     "price": 4000,
     "image": "image/tempe.png"
   },
   {
     "id": 7,
     "name": " Terong",
+    "desc": "Terong digoreng dengan minyak panas gratis bumbu madura jadi enak mantap lezat",
     "price": 4000,
     "image": "image/terong.png"
   },
   {
     "id": 8,
     "name": " Nasi",
+    "desc": "Nasi hangat pulen enak mantap lezat",
     "price": 3000,
     "image": "image/nasi.png"
   }
