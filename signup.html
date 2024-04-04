@@ -4,11 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Daftar Akun | Warung Bebek Palupi</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/signup.js"></script>
     <link rel="stylesheet" href="css/style-signup.css" />
   </head>
-
+  <body>
       <div id="signup" class="signup">
         <form class="content" action="/submit" method="post">
           <h2>Daftar Akun</h2>
@@ -24,25 +22,24 @@
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required />
           </div>
+          <p class="false-password">Cek password anda kembali agar sesuai</p>
           <div>
             <label for="password">Konfirmasi Password:</label>
             <input type="password" id="re-password" name="password" required />
           </div>
-          <p></p>
           <div>
-            <a href="menu.html" id="signup" class="signup-btn">Daftar Akun</a>
+            <a id="signup-btn" class="signup-btn">Daftar Akun</a>
           </div>
           <p></p>
           <div>
             <p>
-              Sudah memiliki akun? <a href="home.html" class="login">Masuk Akun</a>
+              Sudah memiliki akun? <a href="login.html" class="login">Masuk Akun</a>
             </p>
           </div>
         </form>
       </div>
     </div>
-
-    <!-- Overlay -->
-    <div id="overlay" class="overlay"></div>
   </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/signup.js"></script>
 </html>

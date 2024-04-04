@@ -9,9 +9,9 @@
      <meta name="keywords" content="">
      <meta name="author" content="">
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-     <link rel="stylesheet" href="css/bootstrap.min.css">
-     <link rel="stylesheet" href="css/animate.css">
+     <link rel="stylesheet" href="css\template\bootstrap.min.css">
      <link rel="stylesheet" href="css/style-home.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
@@ -25,7 +25,7 @@
                          <span class="icon icon-bar"></span>
                     </button>
 
-                    <!-- lOGO TEXT HERE -->
+                    <!-- LOGO -->
                     <a href="home.html" class="navbar-brand">Warung <span>.</span> Palupi</a>
                </div>
 
@@ -39,28 +39,9 @@
                          <li><a href="#contact" class="smoothScroll">Lokasi</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                         <li><a>Hubungi <i class="fa fa-phone"></i> (031) 5040064</a></li>
-                         <a href="#masuk" id="masukBtn" class="section-btn">Pesan Sekarang</a>
-                    </ul>
-                    <ul class="open-popup-btn" style="display: flex;">
-                         <div id="popup-form" class="popup">
-                              <form class="popup-content" action="/submit" method="post">
-                                <span class="close">&times;</span>
-                                <h2>Masuk Akun</h2>
-                                <p>Silahkan masukkan data diri anda dengan benar untuk memesan di warung kami</p>                                
-                                <div>
-                                <label for="username">Username:</label>
-                                <input type="text" id="username" name="username" required></div>
-                                <div><label for="password">Password:</label>
-                                <input type="password" id="password" name="password" required></div>
-                                <p></p>
-                                <div><a href="menu.html" id = "masuk-akun" class="section-btn">Masuk Akun</a></div>
-                                <div>
-                                <p>Belum punya akun? <a href="#signup.html" class="daftar">Daftar Sekarang</a></p>
-                                </div>
-                              </form>
-                         </div>
-                    </ul>
+                         <li><a><i class="fa fa-phone"></i> (031) 5040064</a></li>
+                         <a href="login.html" id="masukBtn" class="section-btn">Pesan Sekarang</a>
+                    </ul>                    
                </div>
           </div>
      </section>
@@ -74,7 +55,7 @@
                                         <div class="col-md-8 col-sm-12">
                                              <h3>Warung Bebek &amp; Lauk Lainnya </h3>
                                              <h1>Menyajikan berbagai macam penyetan enak, lezat, nikmat.</h1>
-                                             <a href="#menu" class="section-btn btn btn-default smoothScroll">Lihat Menu</a>
+                                             <a href="#menu" class="section-btn btn btn-default smoothScroll">Lihat Menu</a>                                             
                                         </div>
                                    </div>
                               </div>
@@ -120,10 +101,29 @@
                     <div class="col-md-12 col-sm-12">
                          <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
                               <h2>Menu Kami</h2>
+                              <div class="listProduct">
+                                   <li>
+                                   <p id="nama">Bebek Goreng</p>
+                                   <img src="image/bebek.png" class="img">
+                              </li>
+                              <li>
+                                   <p id="nama">Ayam Goreng</p>
+                                   <img src="image/ayam.png" class="img">
+                              </li>
+                              <li>
+                                   <p id="nama">Mujaer Goreng</p>
+                                   <img src="image/mujaer.png" class="img">
+                              </li>
+                              <li>
+                                   <p id="nama">Pecel Lele</p>
+                                   <img src="image/pecel-lele.png" class="img">
+                              </li>
+                              </div>
+                              <p></p>
+                              <a href="login.html"  class="section-btn">Lihat Selengkapnya</a>
                          </div>
                     </div>
              </div>
-             <div class="listProduct"></div>
           </div>
 
      <!-- TESTIMONI -->
@@ -164,7 +164,6 @@
           </div>
      </section>          
 
-     <!-- SCRIPTS -->
      <script src="js/home.js"></script>
      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
      <script src="js/home-JQuery.js"></script>

@@ -3,60 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login & Sign Up Form</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="login.js"></script>
-    <link rel="stylesheet" href="login.css" />
+    <title>Masuk Akun | Warung Bebek Palupi</title>
+    <link rel="stylesheet" href="css/style-login.css" />
   </head>
   <body>
-    <!-- Tombol untuk membuka pop-up login -->
-    <button onclick="openPopup('login')">Login</button>
-
-    <!-- Tombol untuk membuka pop-up sign up -->
-    <button onclick="openPopup('signup')">Sign Up</button>
-
-    <!-- Pop-up login -->
-    <div id="loginPopup" class="popup">
-      <h2>Login</h2>
-      <form id="loginForm">
-        <input
-          type="text"
-          name="username"
-          placeholder="Username"
-          required
-        /><br />
-        <input
-          type="password"
-          name="password"
-          placeholder="Password"
-          required
-        /><br />
-        <button type="submit">Login</button>
-      </form>
-    </div>
-
-    <!-- Pop-up sign up -->
-    <div id="signupPopup" class="popup">
-      <h2>Sign Up</h2>
-      <form id="signupForm">
-        <input
-          type="text"
-          name="username"
-          placeholder="Username"
-          required
-        /><br />
-        <input type="email" name="email" placeholder="Email" required /><br />
-        <input
-          type="password"
-          name="password"
-          placeholder="Password"
-          required
-        /><br />
-        <button type="submit">Sign Up</button>
-      </form>
-    </div>
-
-    <!-- Overlay -->
-    <div id="overlay" class="overlay"></div>
+    <ul class="open-popup-btn" style="display: flex">
+      <div id="popup-form" class="popup">
+        <form class="popup-content" action="/submit" method="post">
+          <span class="close">&times;</span>
+          <h2>Masuk Akun</h2>
+          <p>
+            Silahkan masukkan data diri anda dengan benar untuk memesan di
+            warung kami
+          </p>
+          <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required />
+          </div>
+          <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <p></p>
+          <div>
+            <a href="menu.html" id="masuk-akun" class="section-btn"
+              >Masuk Akun</a
+            >
+          </div>
+          <div>
+            <p>
+              Belum punya akun?
+              <a href="signup.html" class="daftar">Daftar Sekarang</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </ul>
   </body>
 </html>
